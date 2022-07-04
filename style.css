@@ -1,4 +1,44 @@
 body {
     background-color: rgb(20, 22, 22);
-    color:white;
+    color: aliceblue;
+
+}
+
+.button-example {
+    
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 17px 30px;
+    border: 0;
+    color: #fff;
+    font-size: 17.5px;
+    border: 2px solid transparent;
+    border-color: #000;
+    color: #000;
+    background: transparent;
+    font-weight: 800;
+    line-height: 30px;
+    transition: background,color .1s ease-in-out;
+
+}
+
+.button-example:hover {
+    background-color: #000;
+    color: #fff
+    }
+            
+
+.container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    margin: 0px;
+    width:auto;
+    height: auto;
+    outline: outset 1px rgb(168, 168, 168);
+}
+
+p{
+    text-align: center;
 }
