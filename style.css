@@ -57,7 +57,7 @@ h1{
     cursor: none;
 
 }
-.hamburger-span{
+.hamburger span{
     display: block;
     width: 33px;
     height: 4px;
@@ -72,15 +72,25 @@ h1{
 
     transition: 0.4s;
 }
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
 .hamburger:hover span:nth-child(2){
     transform: translateX(10px);
     background-color: var(--primary);
 }
 
-.hamburger.is-active span:nth-child(1){
-    transform: translate(0px, -2px) rotate(45deg);
+.hamburger.is-active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(15px);
 }
-.hamburger.hamburger.is-active span:nth-child(3)
+
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+
+}
 
 .menu {
     display: none;
