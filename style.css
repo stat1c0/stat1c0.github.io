@@ -92,8 +92,22 @@ h1{
 
 }
 
+.hamburger.is-active:hover span{
+    background-color: var(--primary);
+}
+
+
 .menu {
     display: none;
+}
+
+@media (mid-width: 768px){
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
 }
 
 
