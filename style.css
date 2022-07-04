@@ -73,13 +73,13 @@ h1{
     transition: 0.4s;
 }
 
-.hamburger.is-active span:nth-child(1){
-    transform: translate(0px, -2px) rotate(45deg);
-}
-
 .hamburger:hover span:nth-child(2){
     transform: translateX(10px);
     background-color: var(--primary);
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
 }
 
 .hamburger.is-active span:nth-child(2){
@@ -98,10 +98,26 @@ h1{
 
 
 .menu {
-    display: none;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 16px;
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+    padding: 8px 16px;
+    border-radius: 99px;
 }
 
-@media (mid-width: 768px){
+.menu a.is-active, .menu a.hover{
+    background-color: var(--primary);
+}
+
+
+@media (mid-width: 768px) {
     .hamburger {
         display: none;
     }
